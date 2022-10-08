@@ -1,26 +1,220 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Nicholas Martinez's website resume
-        </title>
-    </head>
-    <body>
-        <a class="link" name="top" href="#bottom"><h1>Why you should hire Nicholas Martinez</h1></a>
-		<h3>Personal Information</h3>
-		<ul>
-			<p>Name: Nicholas Martinez</p>
-			<p>Email: r3a11yc001guy@gmail.com</p>
-			<p>Phone#: (361)-658-6614</p>
-			<p>Address: 6685 UTSA Blvd Apt# 214, San Antonio, Texas, 78249</p>
-		</ul>
-		<h3>Academia</h3>
-		<p>I graduated in the top 10% of my class from Flour Bluff Highschool in 2022. I am currently attending the University of Texas at San Antonio majoring in cyber security. I plan on graduating in 2026 with a bachelor's degree.</p>
-		<br>
-		<h3>Work Experience</h3>
-		<ul>
-			<p>09/2022 - 10/2022 General Warehouse Associate</p>
-		</ul>
-		<p>So far, I have only worked one job at a TJMAXX distribution center as a general warehouse associate. I worked there for a month but quit because of how far away it was from where I live and because it was leaving me with hardly any time to get work done for my classes.</p>
-        <a class="link" name="bottom" href="#top"><h3>Thus concludes why you should hire Nicholas Martinez</h3></a>
-    </body>
+<head>
+    <style>
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+                width: 10%;
+            }
+            to{
+                transform: rotate(360deg);
+                width: 50%;
+            }
+        }
+
+        img.dog{
+            animation-name: spin;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        p, ul, ol, h3, h4{
+           color: aqua;
+           padding: 0px;
+        }
+
+        p, ul{
+            font-size: large;
+        }
+
+        h3{
+            font-size: x-large;
+        }
+
+        h4{
+            font-size: larger;
+        }
+
+        body{
+            background-color: black;
+            background-attachment: fixed;
+        }
+
+        img.utsa{
+            float: right;
+        }
+
+        main {
+            color: #CCC;
+            margin-left: 7em;
+            padding: 1px 0 1px 5%;
+        }
+
+        nav {
+            width: 7em;
+            background: #FDD;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            width: 7em;
+            background: white;
+            border: 1px solid;
+        }
+
+        nav li {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            border-bottom: 1px solid #CCC;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: 0;
+            left: 7em;
+            display: none;
+        }
+
+        nav li a {
+            display: block;
+            padding: 0.25em 0 0.25em 0.5em;
+            text-decoration: none;
+        }
+
+        nav li:hover {
+            background: #EDD;
+        }
+
+        nav li.submenu {
+            background: url(http://...submenu.gif) 95% 50% no-repeat;
+        }
+
+        nav li.submenu:hover {
+            background-color: #EDD;
+        }
+
+        a.link{
+            color: blue;
+        }
+
+        a.link :hover{
+            color: darkblue;
+        }
+
+        nav ul.level1 li.submenu:hover ul.level2,
+        nav ul.level2 li.submenu:hover ul.level3 {
+            display:block;
+        }
+    </style>
+    <title>
+        The totally awesome life of one Nicholas Martinez
+    </title>
+</head>
+<body>
+    <nav>
+        <ul class="level1">
+            <li>Home</li>
+            <li class="submenu">Classes
+                <ul class="level2">
+                    <li><a href="#aquatic">Aquatic Science</a></li>
+                    <li><a href="#econ">Economics</a></li>
+                    <li><a href="#psych">Psychology</a></li>
+                    <li><a href="#stats">Statistics</a></li>
+                    <li><a href="#compsci">Computer Science 3</a></li>
+                </ul>
+            </li>
+            <li class="submenu">Hobbies
+                <ul class="level2">
+                    <li><a href="#vg">Video Games</a></li>
+                    <li><a href="#friends">Friends</a></li>
+                    <li><a href="#dogs">Dogs</a></li>
+                </ul>
+            </li>
+            <li>MORBIUS</li>
+        </ul>
+    </nav>
+    <main>
+        <audio controls autoplay loop preload="auto">
+            <source src="26. Hollow Knight.mp3" type="audio/mpeg">
+        </audio>
+        <a class="link" name="top" href="#bottom"><h1>The Life of Nick Martinez<h1></a>
+        <h3>Hello my name is Nick Martinez.</h3>
+
+        <p>I'm learning html to create webpages. I'm going to UTSA to major in cyber security.</p>
+        <img src="https://www.utsa.edu/today/2017/images/athleticsutsa780.jpg" width=600>
+        <br>
+        <br>
+        <br>
+        <h3>Classes:</h3>
+        <p>I am currently taking these classes as a senior in high school:</p>
+        <ul>
+            <li>Aquatic Science</li>
+            <li>Economics</li>
+            <li>Psychology</li>
+            <li>Statistics</li>
+            <li>Computer Science 3</li>
+        </ul>
+        <br>
+        <p>I am currently in the top 10% of my class.</p>
+        <br>
+        <a name="aquatic"><h4>Aquatic Science:</h4></a>
+        <p>In aquatic science, I had to take care of fish in a fish tank for the whole year.
+            My first fish was a three spotted domino damsel fish named Two Day. My final grade in this class is a 98.
+        </p>
+        <br>
+        <a name="econ"><h4>Economics:</h4></a>
+        <p>
+            In economics I have learned a lot about the country's monetary system.
+        </p>
+        <br>
+        <a name="psych"><h4>Psychology:</h4></a>
+        <p>
+            I am taking dual credit psychology with del mar college. I will be taking my final test on May 10th.
+            So far I have learned how the human mind works and its different functions.
+        </p>
+        <br>
+        <a name="stats"><h4>Statistics:</h4></a>
+        <p>
+            I am taking dual credit statistics with del mar college. My final test is on May 11th.
+        </p>
+        <br>
+        <a name="compsci"><h4>Computer Science:</h4></a>
+        <p>
+            This year in computer science I have learned about all of the different data sets in java and how and when to use them.
+            I am also currently learning html and how to code web pages like the one you are reading right now.
+        </p>
+        <br>
+        <br>
+        <h3>Hobbies:</h3>
+        <a name="vg"><h4>Video Games:</h4></a>
+        <p>I enjoy playing video games in my free time. I have a playstation console</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vTVvGM302QY3u4lfgnCdFiT6mGyepFrbgh9ebaMQgAao37Tto9NMXx68nSoyk86ITwc&usqp=CAU">
+        <br>
+        <p>Here is a video of one of my friends playing Dark Souls 3 and fighting The Nameless King.</p>
+        <iframe width="600" height="315" src="https://www.youtube.com/embed/g03mnxtJiaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <p>Other than souls-like games my friends and I often play Rainbow Six Siege. We like to start custom games and fight against each other.</p>
+        <br>
+        <a name="friends"><h4>Friends:</h4></a>
+        <p>My closest friends are Giovanni Diuguid, Ashton Baker, Daniel Santos, Orion Britt, Taylon Younger, Ian Shutt, Micah Jaimes, and Ben King.</p>
+        <br>
+        <a name="dogs"><h4>Dogs:</h4></a>
+        <p>I have 2 dogs. One is a dachsund named Chelsea and the other is a Husky named Cammy.</p>
+        <br>
+        <p>Look at this image. It's a picture of a dog with a dog in it's mouth. He looks so happy.</p>
+        <img class="dog" src="https://preview.redd.it/r9nch39d1ji61.jpg?auto=webp&s=1ad24120ee7c18a6d9e9c9bc87674abef36eb57b">
+        <br>
+        <br>
+        <p>Here is a picture of the greatest movie ever made. 
+            It is destined to sell over one trillion tickets.
+        </p>
+        <img src="https://www.morbius.movie/assets/images/desktopbanner.jpg" width=400 >
+        <p>"IT'S MORBIN' TIME!!!!!" - Dr. Michael Morbius</p>
+        <a class="link" href="#top" name="bottom"><h2>End of page</h2></a>
+    </main>
+</body>
 </html>
